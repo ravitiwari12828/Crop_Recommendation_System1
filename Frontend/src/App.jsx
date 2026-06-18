@@ -67,7 +67,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Landing/>} />
         <Route path='/login' element={<Landing/>}/>
-        <Route element={<ProtectedRoute />}>
+        {/* <Route element={<ProtectedRoute />}> */}
           <Route element={<TopBarLayout />}>
             <Route path='/dashboard' element={<Dashboard/>} />
             <Route path='/recommendations' element={<Recommendation/>} />
@@ -88,7 +88,7 @@ function App() {
           <Route path='/admin-feedback' element={<Feedback/>}/>
           <Route path='/admin-system-status' element={<SystemStatus/>}/>
         
-        </Route>
+        {/* </Route> */}
         
       </Routes>
     </Router>
